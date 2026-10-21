@@ -1,0 +1,48 @@
+
+# Shared cost model and clearance settings.
+ROBOT_RADIUS: float = 1.5
+SAFE_DIST: float = 3.0
+COLLISION_PENALTY_WEIGHT: float = 1000.0
+OBSTACLE_RADIUS: float = 0.5
+
+# A* fixed policy in the refactored version.
+A_STAR_REMOVE_REDUNDANT: bool = True
+A_STAR_REMOVE_TRANSITIVE: bool = True
+A_STAR_AVOID_CORNER_CUTTING: bool = False
+
+# PSO planner numeric hyperparameters.
+PSO_N_WAYPOINTS: int = 12
+PSO_N_PARTICLES: int = 100
+PSO_MAX_ITERATIONS: int = 200
+PSO_INERTIA_WEIGHT: float = 0.5
+PSO_COGNITIVE_COEFFICIENT: float = 1.8
+PSO_SOCIAL_COEFFICIENT: float = 1.8
+PSO_W_MAX: float = 0.9
+PSO_W_MIN: float = 0.4
+PSO_SOBL_MU: float = 0.5
+PSO_SOBL_SIGMA: float = 0.15
+PSO_MAX_RESTARTS: int = 10
+PSO_RETRY_UNTIL_SUCCESS: bool = True
+PSO_N_CONTROL_POINTS: int = 5
+PSO_JITTER: float = 90.0
+PSO_MAX_SPEED: float = 12.0
+PSO_SMOOTH_ALPHA: float = 0.12
+PSO_SMOOTH_ROUNDS: int = 1
+PSO_PATIENCE: int = 20
+PSO_PATIENCE_TOLERANCE: float = 1e-6
+
+# Segment optimizer defaults (used by APSO/HAPSO internals after wrapper removal).
+OPTIMIZER_N_PARTICLES: int = 20
+OPTIMIZER_MAX_ITERATIONS: int = 100
+OPTIMIZER_COGNITIVE_COEFFICIENT: float = 2.0
+OPTIMIZER_SOCIAL_COEFFICIENT: float = 2.0
+OPTIMIZER_W_MIN: float = 0.4
+OPTIMIZER_W_MAX: float = 0.9
+OPTIMIZER_SOBL_MU: float = 0.5
+OPTIMIZER_SOBL_SIGMA: float = 0.15
+OPTIMIZER_USE_TVAC: bool = True
+OPTIMIZER_C1_INITIAL: float = 2.5
+OPTIMIZER_C1_FINAL: float = 0.5
+OPTIMIZER_C2_INITIAL: float = 0.5
+OPTIMIZER_C2_FINAL: float = 2.5
+OPTIMIZER_SEARCH_MARGIN: int = 3

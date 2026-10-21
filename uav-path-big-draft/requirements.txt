@@ -1,0 +1,8 @@
+# Danh sách các thư viện phụ thuộc (dependencies) của dự án
+# Cài đặt bằng: pip install -r requirements.txt
+
+# Thư viện xử lý mảng và toán học
+numpy>=1.21.0
+
+# Thư viện vẽ đồ thị và hiển thị hình ảnh
+matplotlib>=3.4.0

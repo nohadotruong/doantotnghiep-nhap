@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-04-06T10:10:56.697079",
+  "algorithm": "HAPSO",
+  "grid": {
+    "width": 20,
+    "height": 20,
+    "start": [
+      0,
+      19
+    ],
+    "goal": [
+      19,
+      0
+    ],
+    "obstacles_count": 190
+  },
+  "path": {
+    "found": true,
+    "length": 6,
+    "coordinates": [
+      [
+        0,
+        19
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        19,
+        0
+      ]
+    ],
+    "distance": 5
+  }
+}

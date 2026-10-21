@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+reference_project/
+data/
+backups/
+trash/

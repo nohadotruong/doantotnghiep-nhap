@@ -1,0 +1,61 @@
+{
+  "algorithm": "A*",
+  "start": [
+    0,
+    0
+  ],
+  "goal": [
+    29,
+    29
+  ],
+  "path": [
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      18,
+      16
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      12,
+      25
+    ],
+    [
+      13,
+      28
+    ],
+    [
+      29,
+      29
+    ]
+  ],
+  "path_length": 8,
+  "execution_time": 0.007965326309204102,
+  "metrics": {
+    "min_d": 59.21443038185327,
+    "min_p": 8,
+    "min_i": 8.178438541709554,
+    "min_c": 0.007965326309204102,
+    "min_t": 63.42567354953517,
+    "time_movement": 59.21443038185327,
+    "time_decision": 1.6,
+    "time_turning": 2.603277841372695,
+    "time_algorithm": 0.007965326309204102
+  },
+  "remove_redundant": true,
+  "remove_trans_redundant": true,
+  "avoid_corner_cutting": true
+}

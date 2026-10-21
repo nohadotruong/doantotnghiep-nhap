@@ -1,0 +1,49 @@
+{
+  "algorithm": "PSO",
+  "start": [
+    1,
+    28
+  ],
+  "goal": [
+    28,
+    1
+  ],
+  "path": [
+    [
+      1,
+      28
+    ],
+    [
+      7,
+      16
+    ],
+    [
+      22,
+      18
+    ],
+    [
+      28,
+      5
+    ],
+    [
+      28,
+      1
+    ]
+  ],
+  "path_length": 5,
+  "execution_time": 2.4377694129943848,
+  "metrics": {
+    "min_d": 46.86697487869665,
+    "min_p": 5,
+    "min_i": 2.9430481091823353,
+    "min_c": 2.4377694129943848,
+    "min_t": 51.241545600358286,
+    "time_movement": 46.86697487869665,
+    "time_decision": 1.0,
+    "time_turning": 0.9368013086672495,
+    "time_algorithm": 2.4377694129943848
+  },
+  "remove_redundant": false,
+  "remove_trans_redundant": false,
+  "avoid_corner_cutting": false
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-03-25T10:39:42.718410",
+  "algorithm": "PSO (Grid)",
+  "grid": {
+    "width": 20,
+    "height": 20,
+    "start": [
+      0,
+      19
+    ],
+    "goal": [
+      19,
+      0
+    ],
+    "obstacles_count": 96
+  },
+  "path": {
+    "found": true,
+    "length": 5,
+    "coordinates": [
+      [
+        0,
+        19
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        19,
+        0
+      ]
+    ],
+    "distance": 4
+  }
+}

@@ -1,0 +1,39 @@
+Tìm đường đi thô bằng AStar planner:
+- Toggle bỏ điểm dư thừa
+- Toggle bỏ điểm chuyển tiếp dư thừa
+- Toggle corner cutting
+
+Tìm đường đi thô bằng PSO planner:
+- Khởi tạo ngẫu nhiên các waypoints trên bản đồ FREE
+- Khởi tạo các particles là các path
+- Tối ưu hóa các particles với fitness = length * collision_point
+- Quy tắc kiểm tra va chạm:
+    + Liệt kê các ô grid mà đường thẳng có đi qua
+    + Kiểm tra ô đó có phải là chướng ngại vật hay không
+
+Tìm đường đi và tối ưu hóa bằng APSO:
+- Nhận đường đi thô từ Astar (Có bỏ điểm dư thừa, có bỏ điểm chuyển tiếp, không corner cutting):
+astar = Astar(
+    self.grid,
+    prune_collinear=self.astar_prune_collinear,
+    prune_transitions=self.astar_prune_transitions,
+    avoid_corner_cutting=False,
+)
+- Tối ưu hóa đường đi bằng PSOptimize với fitness = length * collision_point
+- Quy tắc kiểm tra va chạm:
+    + Liệt kê các ô grid mà đường thẳng có đi qua
+    + Kiểm tra ô đó có phải là chướng ngại vật hay không
+
+Tìm đường đi và tối ưu hóa bằng HAPSO:
+- Nhận đường đi thô từ Astar (Có bỏ điểm dư thừa, có bỏ điểm chuyển tiếp, có corner cutting):
+astar = Astar(
+    self.grid,
+    prune_collinear=self.astar_prune_collinear,
+    prune_transitions=self.astar_prune_transitions,
+    avoid_corner_cutting=True,
+)
+- Tối ưu hóa đường đi bằng PSOptimize với fitness = length * collision_point
+- Quy tắc kiểm tra va chạm:
+    + Liệt kê các ô grid mà đường thẳng có đi qua
+    + Kiểm tra ô đó có phải là chướng ngại vật hay không
+
